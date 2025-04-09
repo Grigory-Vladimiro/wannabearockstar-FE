@@ -21,7 +21,8 @@ $(window).on('scroll', function () {
 
 
 $(document).ready(function(){
-  $.Scrollax();
+  var s = new Scrollax();
+  s.add('.parallax-bg', 0.3);
 
 // mobile_menu
 var menu = $('ul#navigation');
