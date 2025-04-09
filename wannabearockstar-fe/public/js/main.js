@@ -21,6 +21,7 @@ $(window).on('scroll', function () {
 
 
 $(document).ready(function(){
+  $.Scrollax();
 
 // mobile_menu
 var menu = $('ul#navigation');
