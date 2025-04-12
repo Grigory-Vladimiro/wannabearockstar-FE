@@ -20,9 +20,9 @@ $(window).on('scroll', function () {
 
 
 
-$(document).ready(function(){
-  var s = new Scrollax();
-  s.add('.parallax-bg', 0.3);
+//$(document).ready(function(){
+//  var s = new Scrollax();
+//  s.add('.parallax-bg', 0.3);
 
 // mobile_menu
 var menu = $('ul#navigation');
@@ -229,15 +229,15 @@ $('.img-pop-up').magnificPopup({
 
 
   // scrollIt for smoth scroll
-  $.scrollIt({
-    upKey: 38,             // key code to navigate to the next section
-    downKey: 40,           // key code to navigate to the previous section
-    easing: 'linear',      // the easing function for animation
-    scrollTime: 600,       // how long (in ms) the animation takes
-    activeClass: 'active', // class given to the active nav element
-    onPageChange: null,    // function(pageIndex) that is called when page is changed
-    topOffset: 0           // offste (in px) for fixed top navigation
-  });
+  //$.scrollIt({
+  //  upKey: 38,             // key code to navigate to the next section
+  //  downKey: 40,           // key code to navigate to the previous section
+  //  easing: 'linear',      // the easing function for animation
+  //  scrollTime: 600,       // how long (in ms) the animation takes
+  //  activeClass: 'active', // class given to the active nav element
+  //  onPageChange: null,    // function(pageIndex) that is called when page is changed
+  //  topOffset: 0           // offste (in px) for fixed top navigation
+  // });
 
   // scrollup bottom to top
   $.scrollUp({
@@ -399,4 +399,4 @@ mailChimp();
             $("#search_input").focus();
         });
 
-})(jQuery);	
+//})(jQuery);	
