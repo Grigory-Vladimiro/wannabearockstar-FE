@@ -20,7 +20,7 @@ const upcomingShows = [
 
 const UpcomingShowsSection = () => {
   return (
-    <section className="shows_area section_padding">
+    <section className="shows_area section_padding" id="shows">
       <div className="container">
         <div className="section_title text-center mb-5">
           <h3>Upcoming Shows</h3>

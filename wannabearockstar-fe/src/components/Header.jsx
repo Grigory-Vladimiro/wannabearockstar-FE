@@ -22,6 +22,7 @@ const Header = () => {
                         <li><a className="active" href="/">home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/track">Tracks</a></li>
+                        <li><a href="#shows">Shows</a></li>
                         <li>
                           <a href="#">Blog <i className="ti-angle-down"></i></a>
                           <ul className="submenu">
