@@ -5,6 +5,7 @@ import AlbumsSection from './components/AlbumsSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 import UpcomingShowsSection from './components/UpcomingShowsSection';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AlbumsSection />
       <AboutSection />
       <UpcomingShowsSection />
+      <ContactSection />
       <Footer />
       {/* Other sections */}
     </div>
