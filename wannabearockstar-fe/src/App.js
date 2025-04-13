@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AlbumsSection from './components/AlbumsSection';
+import AboutSection from './components/AboutSection';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <HeroSection />
       <AlbumsSection />
+      <AboutSection />
       {/* Other sections */}
     </div>
   );
