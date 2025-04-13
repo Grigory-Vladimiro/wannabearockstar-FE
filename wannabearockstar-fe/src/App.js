@@ -3,6 +3,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AlbumsSection from './components/AlbumsSection';
 import AboutSection from './components/AboutSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <AlbumsSection />
       <AboutSection />
+      <Footer />
       {/* Other sections */}
     </div>
   );
