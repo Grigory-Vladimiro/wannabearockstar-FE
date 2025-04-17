@@ -6,6 +6,8 @@ import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 import UpcomingShowsSection from './components/UpcomingShowsSection';
 import ContactSection from './components/ContactSection';
+import AddConcertForm from "./components/AddConcertForm";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <AboutSection />
       <UpcomingShowsSection />
       <ContactSection />
+      <AddConcertForm />
       <Footer />
       {/* Other sections */}
     </div>
