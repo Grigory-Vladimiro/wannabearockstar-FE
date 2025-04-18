@@ -1,5 +1,4 @@
 import React from "react";
-import * as React from "react";
 import {
   BrowserRouter,
   Routes,
@@ -26,7 +25,6 @@ import ConcertAdmin from "./components/admin/ConcertAdmin";
 function App() {
   return (
     <BrowserRouter>
-   <Router>
       <Routes>
         {/* public */}
         <Route
@@ -54,7 +52,6 @@ function App() {
           {/* to add dashboard */}
         </Route>
       </Routes>
-    </Router>
     </BrowserRouter>
   );
 }
