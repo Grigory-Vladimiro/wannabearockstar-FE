@@ -8,6 +8,7 @@ import UpcomingShowsSection from './components/UpcomingShowsSection';
 import ContactSection from './components/ContactSection';
 import AddConcertForm from "./components/AddConcertForm";
 import AddAlbumForm from "./components/AddAlbumForm";
+import ContactForm from "./components/ContactForm";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <ContactSection />
       <AddConcertForm />
       <AddAlbumForm />
+      <ContactForm />
       <Footer />
       {/* Other sections */}
     </div>
