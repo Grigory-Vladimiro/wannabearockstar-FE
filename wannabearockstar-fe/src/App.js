@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import * as React from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 // public part
 import Header from "./components/Header";
@@ -20,7 +25,8 @@ import ConcertAdmin from "./components/admin/ConcertAdmin";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
+   <Router>
       <Routes>
         {/* public */}
         <Route
@@ -49,6 +55,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+    </BrowserRouter>
   );
 }
 
