@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AlbumsSection from './components/AlbumsSection';
@@ -24,9 +24,18 @@ function App() {
       <AddAlbumForm />
       <ContactForm />
       <Footer />
-      {/* Other sections */}
+      {/* Other sections *///}
+//    </div>
+//  );
+//} 
+
+import AdminDashboard from "./components/AdminDashboard";
+
+function App() {
+  return (
+    <div>
+<AdminDashboard />
     </div>
   );
-}
-
+} 
 export default App;
