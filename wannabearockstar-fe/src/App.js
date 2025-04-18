@@ -1,41 +1,55 @@
-/*import React from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AlbumsSection from './components/AlbumsSection';
-import AboutSection from './components/AboutSection';
-import Footer from './components/Footer';
-import UpcomingShowsSection from './components/UpcomingShowsSection';
-import ContactSection from './components/ContactSection';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// public part
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import AlbumsSection from "./components/AlbumsSection";
+import AboutSection from "./components/AboutSection";
+import UpcomingShowsSection from "./components/UpcomingShowsSection";
+import ContactSection from "./components/ContactSection";
 import AddConcertForm from "./components/AddConcertForm";
 import AddAlbumForm from "./components/AddAlbumForm";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
-
-function App() {
-  return (
-    <div>
-      <Header />
-      <HeroSection />
-      <AlbumsSection />
-      <AboutSection />
-      <UpcomingShowsSection />
-      <ContactSection />
-      <AddConcertForm />
-      <AddAlbumForm />
-      <ContactForm />
-      <Footer />
-      {/* Other sections *///}
-//    </div>
-//  );
-//} 
-
-import AdminDashboard from "./components/AdminDashboard";
+// admiin part
+import AdminLayout from "./components/admin/AdminLayout";
+import AlbumAdmin from "./components/admin/AlbumAdmin";
+import ConcertAdmin from "./components/admin/ConcertAdmin";
 
 function App() {
   return (
-    <div>
-<AdminDashboard />
-    </div>
+    <Router>
+      <Routes>
+        {/* public */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <HeroSection />
+              <AlbumsSection />
+              <AboutSection />
+              <UpcomingShowsSection />
+              <ContactSection />
+              <AddConcertForm />
+              <AddAlbumForm />
+              <ContactForm />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* admin layout */}
+        <Route path="/admin/*" element={<AdminLayout />}>
+          <Route path="albums" element={<AlbumAdmin />} />
+          <Route path="concerts" element={<ConcertAdmin />} />
+          {/* to add dashboard */}
+        </Route>
+      </Routes>
+    </Router>
   );
-} 
+}
+
 export default App;
