@@ -16,6 +16,7 @@ import AddConcertForm from "./components/AddConcertForm";
 import AddAlbumForm from "./components/AddAlbumForm";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import NewsSection from "./components/NewsSection";
 
 // admiin part
 import AdminLayout from "./components/admin/AdminLayout";
@@ -41,6 +42,7 @@ function App() {
               <AddConcertForm />
               <AddAlbumForm />
               <ContactForm />
+              <NewsSection />
               <Footer />
             </>
           }
