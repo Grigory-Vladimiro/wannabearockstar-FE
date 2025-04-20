@@ -27,6 +27,18 @@ const AlbumsSection = () => {
                 />
                 <h4 className="mt-3">{album.title}</h4>
                 <p>{album.releaseYear}</p>
+                
+                {/* song list (if available) */}
+                {album.songs && album.songs.length > 0 && (
+                  <div className="album-songs mt-3">
+                    <h5>Songs:</h5>
+                    <ul className="list-unstyled">
+                      {album.songs.map((song, idx) => (
+                        <li key={idx}>🎵 {song}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           ))}
