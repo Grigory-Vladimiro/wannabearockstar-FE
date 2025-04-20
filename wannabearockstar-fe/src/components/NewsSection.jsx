@@ -6,7 +6,7 @@ const NewsSection = () => {
 
   useEffect(() => {
     axios
-      .get("/api/news")
+      .get("http://localhost:8080/api/news")
       .then((res) => {
         console.log("News fetched:", res.data); // logging
         setNewsList(res.data);
