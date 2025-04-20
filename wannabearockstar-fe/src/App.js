@@ -35,6 +35,7 @@ function App() {
             <>
               <Header />
               <HeroSection />
+              <NewsSection />
               <AlbumsSection />
               <AboutSection />
               <UpcomingShowsSection />
@@ -42,7 +43,6 @@ function App() {
               <AddConcertForm />
               <AddAlbumForm />
               <ContactForm />
-              <NewsSection />
               <Footer />
             </>
           }

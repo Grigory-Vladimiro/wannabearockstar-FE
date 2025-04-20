@@ -7,7 +7,10 @@ const NewsSection = () => {
   useEffect(() => {
     axios
       .get("/api/news")
-      .then((res) => setNewsList(res.data))
+      .then((res) => {
+        console.log("News fetched:", res.data); // logging
+        setNewsList(res.data);
+      })
       .catch((err) => {
         console.error("Error fetching news:", err);
         setNewsList([]);
@@ -24,7 +27,7 @@ const NewsSection = () => {
           <ul className="news_list">
             {newsList.map((n) => (
               <li key={n.id} className="news_item">
-                <strong>{n.date}</strong>: {n.text}
+                <strong>{n.date || "No date"}</strong>: {n.text || "No text"}
               </li>
             ))}
           </ul>
