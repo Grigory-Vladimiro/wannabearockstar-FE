@@ -39,6 +39,12 @@ const AdminLayout = () => {
                 <span className="app-menu__label">Concerts</span>
               </a>
             </li>
+            <li>
+              <a className="app-menu__item" href="/admin/news">
+                <i className="app-menu__icon fa fa-newspaper-o"></i>
+                <span className="app-menu__label">News</span>
+              </a>
+            </li>
           </ul>
         </aside>
 

@@ -1,15 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import AlbumAdmin from "./admin/AlbumAdmin";
+import ConcertAdmin from "./admin/ConcertAdmin";
+import NewsAdmin from "./admin/NewsAdmin";
 
 const AdminDashboard = () => {
+  const [selected, setSelected] = useState("albums");
+
   useEffect(() => {
-    // Load the external JavaScript file
-    const script1 = document.createElement("script");
-    script1.src = "/admin/js/main.js";
-    script1.async = true;
-    document.body.appendChild(script1);
+    const script = document.createElement("script");
+    script.src = "/admin/js/main.js";
+    script.async = true;
+    document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script1);
+      document.body.removeChild(script);
     };
   }, []);
 
@@ -23,6 +27,27 @@ const AdminDashboard = () => {
           <a className="app-header__logo" href="#">Vali Admin</a>
         </header>
 
+        <div className="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside className="app-sidebar">
+          <ul className="app-menu">
+            <li>
+              <button className="app-menu__item" onClick={() => setSelected("albums")}>
+                Albums Admin
+              </button>
+            </li>
+            <li>
+              <button className="app-menu__item" onClick={() => setSelected("concerts")}>
+                Concerts Admin
+              </button>
+            </li>
+            <li>
+              <button className="app-menu__item" onClick={() => setSelected("news")}>
+                News Admin
+              </button>
+            </li>
+          </ul>
+        </aside>
+
         <main className="app-content">
           <div className="app-title">
             <div>
@@ -30,6 +55,10 @@ const AdminDashboard = () => {
               <p>Vali template in React</p>
             </div>
           </div>
+
+          {selected === "albums" && <AlbumAdmin />}
+          {selected === "concerts" && <ConcertAdmin />}
+          {selected === "news" && <NewsAdmin />}
         </main>
       </div>
     </>

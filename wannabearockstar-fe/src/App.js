@@ -21,6 +21,7 @@ import Footer from "./components/Footer";
 import AdminLayout from "./components/admin/AdminLayout";
 import AlbumAdmin from "./components/admin/AlbumAdmin";
 import ConcertAdmin from "./components/admin/ConcertAdmin";
+import NewsAdmin from "./components/admin/NewsAdmin";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/admin/*" element={<AdminLayout />}>
           <Route path="albums" element={<AlbumAdmin />} />
           <Route path="concerts" element={<ConcertAdmin />} />
+          <Route path="news" element={<NewsAdmin />} />
           {/* to add dashboard */}
         </Route>
       </Routes>
