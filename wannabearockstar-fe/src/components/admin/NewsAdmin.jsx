@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const API_URL = "http://localhost:8080/api/news";
+
 function NewsAdmin() {
   const [newsList, setNewsList] = useState([]);
   const [text, setText] = useState('');
@@ -8,7 +10,7 @@ function NewsAdmin() {
   const [editingId, setEditingId] = useState(null);
 
   const fetchNews = async () => {
-    const res = await axios.get('/api/news');
+    const res = await axios.get(API_URL);
     setNewsList(res.data);
   };
 
@@ -20,9 +22,9 @@ function NewsAdmin() {
     e.preventDefault();
     const payload = { text, date };
     if (editingId) {
-      await axios.put(`/api/news/${editingId}`, payload);
+      await axios.put(`${API_URL}/${editingId}`, payload);
     } else {
-      await axios.post('/api/news', payload);
+      await axios.post(API_URL, payload);
     }
     setText('');
     setDate('');
@@ -37,7 +39,7 @@ function NewsAdmin() {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`/api/news/${id}`);
+    await axios.delete(`${API_URL}/${id}`);
     fetchNews();
   };
 
