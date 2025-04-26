@@ -11,7 +11,7 @@ const AlbumsSection = () => {
   }, []);
 
   return (
-    <section className="albums_area section_padding">
+    <section id="albums" className="albums_area section_padding">
       <div className="container">
         <div className="section_title text-center mb-5">
           <h3>Our Albums</h3>

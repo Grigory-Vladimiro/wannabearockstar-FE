@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="about_area section_padding">
+    <section id="about" className="about_area section_padding">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="slider_area">
+    <section id="home" className="slider_area">
       <div
         className="single_slider slider_bg_1 d-flex align-items-center justify-content-center"
         style={{

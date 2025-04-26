@@ -22,7 +22,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="contact_area section_padding">
+    <section id="contact" className="contact_area section_padding">
       <div className="container">
         <div className="section_title text-center mb-5">
           <h3>Contact Us</h3>
