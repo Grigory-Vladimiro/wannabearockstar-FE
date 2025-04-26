@@ -10,7 +10,7 @@ const Header = () => {
               <div className="row align-items-center">
                 <div className="col-xl-3 col-lg-2">
                   <div className="logo">
-                    <a href="/">
+                    <a href="#home">
                       <img src="img/logo.png" alt="Logo" />
                     </a>
                   </div>
@@ -19,24 +19,11 @@ const Header = () => {
                   <div className="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a className="active" href="/">home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/track">Tracks</a></li>
+                        <li><a className="active" href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#albums">Albums</a></li>
                         <li><a href="#shows">Shows</a></li>
-                        <li>
-                          <a href="#">Blog <i className="ti-angle-down"></i></a>
-                          <ul className="submenu">
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/single-blog">Single Blog</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#">Pages <i className="ti-angle-down"></i></a>
-                          <ul className="submenu">
-                            <li><a href="/elements">Elements</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                       </ul>
                     </nav>
                   </div>
