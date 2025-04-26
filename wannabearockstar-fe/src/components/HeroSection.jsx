@@ -22,9 +22,6 @@ const HeroSection = () => {
                   is a person who writes <br />
                   and performs music
                 </h3>
-                <a href="#" className="boxed-btn-white">
-                  Explore Music
-                </a>
               </div>
             </div>
           </div>
