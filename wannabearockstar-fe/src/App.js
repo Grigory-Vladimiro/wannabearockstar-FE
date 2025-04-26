@@ -35,8 +35,8 @@ function App() {
             <>
               <Header />
               <HeroSection />
-              <AboutSection />
               <NewsSection />
+              <AboutSection />
               <AlbumsSection />
               <UpcomingShowsSection />
               <ContactSection />
