@@ -35,14 +35,14 @@ function App() {
             <>
               <Header />
               <HeroSection />
+              <AboutSection />
               <NewsSection />
               <AlbumsSection />
-              <AboutSection />
               <UpcomingShowsSection />
               <ContactSection />
-              <AddConcertForm />
-              <AddAlbumForm />
-              <ContactForm />
+              {/* <AddConcertForm /> */}
+              {/* <AddAlbumForm /> */}
+              {/* <ContactForm /> */}
               <Footer />
             </>
           }
