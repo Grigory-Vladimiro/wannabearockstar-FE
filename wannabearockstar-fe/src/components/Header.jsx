@@ -20,6 +20,7 @@ const Header = () => {
                     <nav>
                       <ul id="navigation">
                         <li><a className="active" href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#albums">Albums</a></li>
                         <li><a href="#shows">Shows</a></li>

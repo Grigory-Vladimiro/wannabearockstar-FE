@@ -18,7 +18,7 @@ const NewsSection = () => {
   }, []);
 
   return (
-    <section className="news_section">
+    <section id="news" className="news_section">
       <div className="container">
         <h2 className="section_title">Latest News</h2>
         {newsList.length === 0 ? (
